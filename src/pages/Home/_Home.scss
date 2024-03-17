@@ -1,0 +1,56 @@
+@import '../../style/_VarMix.scss';
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+
+}
+
+.home {
+    background-color: $primary-color;
+    padding-left: 7%;
+    display: flex;
+    gap: 5%;
+    flex: 1;
+    min-height: calc(100vh - 148.96px);
+    
+    &__container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 45px;
+        padding-left: 3%;
+        border-left: 2px solid white;
+
+    }
+    &__job {
+        color: white;
+        font-size: 22px;
+    }
+    &__desc {
+        color: white;
+        font-size: 38px;
+        margin: 0px;
+    }
+    &__work {
+        color: white;
+        font-size: 18px;
+    }
+    &__button {
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; 
+        @include button
+      }
+    &__picto {
+        width: 40%;
+        &-img {
+            //width: 100%;
+        }
+    }
+}

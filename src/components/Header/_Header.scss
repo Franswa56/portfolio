@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 5%;
+    background-color: rgb(31, 31, 31);
+    border-bottom: solid 2px white;
+    &__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        padding-left: 3%;
+        border-left: 2px solid white;
+    }
+    &__name {
+        font-size: 36px;
+        color: white;
+        text-decoration: none;
+        
+    }
+    &__admin {
+        color: white;
+        padding-top: 45px;
+        font-size: 24px;
+    }
+}

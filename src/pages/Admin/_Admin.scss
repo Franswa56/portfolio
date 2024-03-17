@@ -1,0 +1,9 @@
+.admin {
+    background-color: rgb(31, 31, 31);
+    padding-left: 7%;
+    &__container {
+        height: calc(100vh - 148.96px);
+        padding-left: 3%;
+        border-left: 2px solid white;
+    }
+}

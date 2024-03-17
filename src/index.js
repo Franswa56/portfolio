@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -18,7 +20,8 @@ const firebaseConfig = {
   storageBucket: "francois-webdev.appspot.com",
   messagingSenderId: "370276491868",
   appId: "1:370276491868:web:bb6749b2f1a6ff06bb3c99",
-  measurementId: "G-L1ZFYXJNGP"
+  measurementId: "G-L1ZFYXJNGP",
+  databaseURL: "https://francois-webdev-default-rtdb.europe-west1.firebasedatabase.app"
 };
 
 // Initialize Firebase
@@ -36,3 +39,10 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+const auth = getAuth(app)
+
+const db = getDatabase(app);
+
+export { db };
+export {auth};

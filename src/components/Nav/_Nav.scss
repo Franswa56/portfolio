@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    padding-top: 10px;
+    &__title {
+        color: white;
+        font-size: 22px;
+        font-weight: 200;
+
+    }
+}

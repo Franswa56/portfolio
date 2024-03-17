@@ -1,0 +1,49 @@
+@import '../../style/_VarMix.scss';
+
+.signin-message {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 500;
+  color: orangered;
+}
+
+.sign-in-form {
+    position: fixed; // Positionnement fixe pour rester au centre
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // Centrage parfait
+    width: 300px; // Largeur fixe, ajustez selon vos besoins
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Ombre pour un effet de "levage"
+    border-radius: 8px; // Bordures arrondies
+    background: $card-color;
+  
+    .form-group {
+      margin-bottom: 20px; // Espace entre les champs de formulaire
+  
+      label {
+        display: block; // S'assure que le label est au-dessus du champ d'entrée
+        margin-bottom: 5px; // Petite marge entre le label et le champ d'entrée
+      }
+  
+      input {
+        width: 100%; // Utilise toute la largeur disponible
+        padding: 10px; // Padding pour un meilleur look & feel
+        border: 1px solid #ccc; // Bordure subtile
+        border-radius: 4px; // Bordures légèrement arrondies
+        box-sizing: border-box; // S'assure que le padding ne change pas la largeur
+      }
+    }
+  
+    button {
+      width: 100%; // Utilise toute la largeur disponible
+     @include button
+  }
+}

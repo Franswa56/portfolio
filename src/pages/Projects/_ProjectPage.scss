@@ -1,0 +1,14 @@
+@import '../../style/VarMix';
+
+.project-page {
+    background-color: $primary-color;
+    padding-left: 7%;
+    &__container {
+        padding-left: 3%;
+        border-left: 2px solid white;
+        min-height: calc(100vh - 148.96px)
+    }
+    &__title {
+        margin-top: 0px;
+    }
+}
