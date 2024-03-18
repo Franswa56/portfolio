@@ -14,13 +14,13 @@ body {
     display: flex;
     gap: 5%;
     flex: 1;
-    min-height: calc(100vh - 148.96px);
+    min-height: calc(100vh - 151px);
     
     &__container {
         width: 50%;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 4vh;
         padding-top: 45px;
         padding-left: 3%;
         border-left: 2px solid white;
@@ -34,10 +34,12 @@ body {
         color: white;
         font-size: 38px;
         margin: 0px;
+        font-family: 'catamaran', sans-serif;
     }
     &__work {
         color: white;
         font-size: 18px;
+        font-family: 'catamaran', sans-serif;
     }
     &__button {
         width: 180px;
@@ -45,7 +47,13 @@ body {
         align-items: center;
         justify-content: center;
         gap: 15px; 
-        @include button
+        @include button;
+        &-text {
+            font-family: 'catamaran', sans-serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
       }
     &__picto {
         width: 40%;

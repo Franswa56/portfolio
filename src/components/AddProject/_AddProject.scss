@@ -1,0 +1,14 @@
+@import '../../style/VarMix';
+
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    @include card;
+    &__duo {
+        display: flex;
+        flex-direction: column;
+    }
+}

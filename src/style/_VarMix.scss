@@ -15,3 +15,21 @@ $card-color: linear-gradient(to right bottom, #373737, #333333, #2f2f2f, #2b2b2b
       background: linear-gradient(to bottom, darken(#ff7b34, 10%), darken(#fc4c01, 10%));
     }
 }
+
+@font-face {
+    font-family: 'titles';
+    src: url('./fonts/LeagueSpartan-Bold.otf') format('opentype');
+  }
+
+@mixin card {
+    position: fixed; // Positionnement fixe pour rester au centre
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // Centrage parfait
+    width: 300px; // Largeur fixe, ajustez selon vos besoins
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Ombre pour un effet de "levage"
+    border-radius: 8px; // Bordures arrondies
+    background: $card-color;
+}

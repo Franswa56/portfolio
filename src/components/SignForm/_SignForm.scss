@@ -14,17 +14,7 @@
 }
 
 .sign-in-form {
-    position: fixed; // Positionnement fixe pour rester au centre
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); // Centrage parfait
-    width: 300px; // Largeur fixe, ajustez selon vos besoins
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Ombre pour un effet de "levage"
-    border-radius: 8px; // Bordures arrondies
-    background: $card-color;
-  
+    @include card;
     .form-group {
       margin-bottom: 20px; // Espace entre les champs de formulaire
   

@@ -2,7 +2,7 @@ import "./_Project.scss";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import React, { useState, useEffect } from "react";
 
-function Project({ name, description }) {
+function Project({ name, description, image }) {
   // Écouter les changements d'état de connexion
   const [user, setUser] = useState(null);
   const auth = getAuth();
@@ -22,6 +22,7 @@ function Project({ name, description }) {
       <div>
         <h3>{name}</h3>
         <h4>{description}</h4>
+        <img src={image}></img>
       </div>
     </article>
   );

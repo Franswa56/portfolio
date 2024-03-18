@@ -50,7 +50,10 @@ function ProjectPage() {
         <h1 className="project-page__title">Mes projets</h1>
         {user && <AddProject />}
         {projects.map((project) => (
-          <Project key={project.id} name={project.name} description={project.description} />
+          <Project key={project.id}
+           name={project.name} 
+           description={project.description}
+           image={project.image} />
         ))}
       </div>
     </div>
