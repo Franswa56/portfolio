@@ -7,8 +7,21 @@
     align-items: center;
     gap: 15px;
     @include card;
+    position:fixed;
+    transform: translateX(50vh) translateY(-40px);
+    z-index: 2;
+    width: 25%;
     &__duo {
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+    &__button {
+        @include button
+    }
+    &__input {
+        &-text {
+            height: 80px;
+        }
     }
 }

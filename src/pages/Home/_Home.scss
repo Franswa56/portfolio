@@ -14,32 +14,41 @@ body {
     display: flex;
     gap: 5%;
     flex: 1;
-    min-height: calc(100vh - 151px);
+    min-height: calc(100vh - 88px);
     
     &__container {
         width: 50%;
         display: flex;
         flex-direction: column;
-        gap: 4vh;
+        gap: 3vh;
         padding-top: 45px;
         padding-left: 3%;
-        border-left: 2px solid white;
+        border-left: 2px solid white;      
 
     }
     &__job {
         color: white;
         font-size: 22px;
+        opacity: 0;
+        animation: slide 1200ms forwards;
+        
     }
     &__desc {
         color: white;
         font-size: 38px;
         margin: 0px;
         font-family: 'catamaran', sans-serif;
+        animation: slide 1200ms forwards;
+        opacity: 0;
+        animation-delay: 400ms;
     }
     &__work {
         color: white;
         font-size: 18px;
         font-family: 'catamaran', sans-serif;
+        animation: slide 1200ms forwards;
+        opacity: 0;
+        animation-delay: 1200ms;
     }
     &__button {
         width: 180px;
@@ -48,6 +57,10 @@ body {
         justify-content: center;
         gap: 15px; 
         @include button;
+        text-decoration: none;
+        opacity: 0;
+        animation: grow 1200ms forwards;
+        animation-delay: 1.8s;
         &-text {
             font-family: 'catamaran', sans-serif;
             margin-top: 10px;
@@ -58,7 +71,62 @@ body {
     &__picto {
         width: 40%;
         &-img {
-            //width: 100%;
+            width: 100%;
+            animation: grow 1200ms forwards;
+        }
+    }
+    &__picto1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1095px) {
+
+    .home {
+        flex-direction: column;
+        padding-left: 0%;
+        align-items: center;
+        min-height: calc(100vh - 132px);
+        padding-bottom: 25px;
+        &__container {
+            border: none;
+            justify-content: center;
+            width: 90%;
+            padding: 0px;
+            gap: 2vh;
+        }
+        &__job {
+            margin-bottom: 0px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        &__desc {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        &__work {
+            font-size: 16px;
+            margin-top: 160px;
+        }
+        &__picto {
+            display: none;
+            width: 22%;
+            position: absolute;
+            top: 120px;
+            left: 50px;
+        }
+        &__picto1 {
+            display: block;
+            align-self: center;
+            position: absolute;
+            width: 100%;
+            height: 22vh;
+            top: 345px;
+            animation: slide 1200ms forwards;
+            opacity: 0;
+            animation-delay: 800ms;
+            
         }
     }
 }

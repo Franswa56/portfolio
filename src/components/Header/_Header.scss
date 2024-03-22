@@ -6,7 +6,7 @@
     padding-left: 7%;
     padding-right: 5%;
     background-color: rgb(31, 31, 31);
-    border-bottom: solid 2px white;
+    border-bottom: solid 3px white;
     &__container {
         width: 100%;
         height: 100%;
@@ -14,7 +14,7 @@
         justify-content: space-between;
         align-items: baseline;
         padding-top: 15px;
-        padding-bottom: 25px;
+        padding-bottom: 0px;
         padding-left: 3%;
         border-left: 2px solid white;
     }
@@ -23,11 +23,34 @@
         color: white;
         text-decoration: none;
         font-family: 'titles', sans-serif;
-        
+        margin-bottom: 10px;
+        margin-top: 10px;       
     }
     &__admin {
         color: white;
-        padding-top: 45px;
+        padding-top: 20px;
         font-size: 24px;
+        
     }
 }
+
+
+@media (max-width: 1095px) {
+    .header {
+        padding-left: 0%;
+        padding-right: 0%;
+        &__name {
+            font-size: 24px;
+        }
+        &__container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0%;
+            border-left: 0px;
+        }
+        &__admin {
+            display: none;
+        }
+    }
+  }

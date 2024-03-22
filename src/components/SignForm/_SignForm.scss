@@ -15,6 +15,10 @@
 
 .sign-in-form {
     @include card;
+    width: 25%;
+    position: absolute;
+    top: 20%;
+    right: 30%;
     .form-group {
       margin-bottom: 20px; // Espace entre les champs de formulaire
   

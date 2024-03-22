@@ -22,14 +22,35 @@ $card-color: linear-gradient(to right bottom, #373737, #333333, #2f2f2f, #2b2b2b
   }
 
 @mixin card {
-    position: fixed; // Positionnement fixe pour rester au centre
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); // Centrage parfait
-    width: 300px; // Largeur fixe, ajustez selon vos besoins
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Ombre pour un effet de "levage"
     border-radius: 8px; // Bordures arrondies
     background: $card-color;
+    color: white;
+}
+
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(10%)
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0%)
+  }
+
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+    opacity: 0; /* L'image est complètement transparente au début */
+  }
+  1% {
+    opacity: 1; /* L'image devient complètement opaque dès que l'animation commence */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1; /* L'image reste opaque après l'animation */
+  }
 }

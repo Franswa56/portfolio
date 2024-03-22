@@ -45,16 +45,17 @@ function ProjectPage() {
 
   console.log(projects);
   return (
-    <div className="project-page">
-      <div className="project-page__container">
-        <h1 className="project-page__title">Mes projets</h1>
-        {user && <AddProject />}
-        {projects.map((project) => (
-          <Project key={project.id}
-           name={project.name} 
-           description={project.description}
-           image={project.image} />
-        ))}
+    <div className="project-page-over">
+      <div className="project-page">
+        <div className="project-page__container">
+          <h1 className="project-page__title">Mes projets</h1>
+          <div className="project-page__projects">
+            {user && <AddProject />}
+            {projects.map((project) => (
+              <Project key={project.id} name={project.name} description={project.description} image={project.imageUrl} url={project.projectUrl} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

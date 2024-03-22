@@ -1,14 +1,26 @@
 @import '../../style/VarMix';
 
 .project-page {
-    background-color: $primary-color;
-    padding-left: 7%;
+    border-left: 2px solid white;
+    min-height: calc(100vh - 88px);
     &__container {
         padding-left: 3%;
-        border-left: 2px solid white;
-        min-height: calc(100vh - 151px)
+        display: flex;
+        flex-direction: column;
     }
     &__title {
+        padding-top: 30px;
         margin-top: 0px;
+        color: white;
+        margin-bottom: 40px;
     }
+    &__projects {
+        display: flex;
+    }
+}
+
+.project-page-over {
+    background-color: $primary-color;
+    padding-left: 7%;
+    z-index: -2;
 }
