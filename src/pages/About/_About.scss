@@ -1,0 +1,111 @@
+@import '../../style/_VarMix.scss';
+
+.about {
+    background-color: $primary-color;
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    flex: 1;
+    min-height: calc(100vh - 86px);  
+    &__container {
+        display: flex;
+        gap: 10%;
+        padding-top: 45px;
+        padding-left: 3%;
+        border-left: 2px solid white;      
+    }
+    &__card {
+        @include card;
+        border-radius: 20px;
+        animation: slide 1200ms forwards;
+        opacity: 0;
+        margin-bottom: 30px
+    }
+    &__illu {
+
+    }
+    &__img {
+        margin-top: 50px;
+        width: 20%;
+    }
+
+    &__title {
+        color: white;
+        font-size: 38px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    &__desc, &__skills-title, &__skills-list {
+        color: white;
+        font-size: 24px;
+        margin: 0px;
+        font-family: 'catamaran', sans-serif;
+    }
+
+    &__desc {
+        font-size: 24px; // Un peu plus grand pour l'introduction
+    }
+
+    &__skills-title {
+        font-size: 34px;
+    }
+
+    &__skills-list {
+        list-style-type: none; // Enlever les puces de la liste
+        padding: 0;
+        li {
+            margin-bottom: 20px; // Espacement entre les éléments de la liste
+        }
+    }
+    &__tech {
+        &-title {
+            font-size: 34px;
+            text-align: center;
+            margin-top: 3px;
+        }
+        &-table {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
+.zero {
+    width: 50%;
+}
+
+.one {
+    animation-delay: 600ms;
+    width: 82%;
+}
+.two {
+    width: 60%;
+    animation-delay: 800ms;
+    background-image:  linear-gradient(to right bottom, #4a4a4a, #464646, #424242, #3e3e3e, #3a3a3a);;
+}
+
+// Les animations keyframes peuvent rester identiques à celles utilisées pour le Home
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

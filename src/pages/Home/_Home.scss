@@ -28,9 +28,10 @@ body {
     }
     &__job {
         color: white;
-        font-size: 22px;
+        font-size: 26px;
         opacity: 0;
         animation: slide 1200ms forwards;
+        margin-bottom: 0px;
         
     }
     &__desc {
@@ -44,7 +45,7 @@ body {
     }
     &__work {
         color: white;
-        font-size: 18px;
+        font-size: 22px;
         font-family: 'catamaran', sans-serif;
         animation: slide 1200ms forwards;
         opacity: 0;

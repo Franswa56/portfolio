@@ -34,6 +34,7 @@ function Contact() {
   };
 
   return (
+    <div className="contact-border">
     <div className="contact">
       <div className="contact__container">
         <form onSubmit={handleSubmit} className="contact__form">
@@ -53,6 +54,7 @@ function Contact() {
           <button type="submit" className="contact__button">Envoyer</button>
         </form>
       </div>
+    </div>
     </div>
   );
 }

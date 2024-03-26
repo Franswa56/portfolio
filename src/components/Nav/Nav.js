@@ -6,10 +6,9 @@ function Nav() {
   return (
     <div className="nav">
       <NavLink
-        exact
         to="/"
         className="nav__title"
-        activeClassName="activeLink"
+        activeclassname="activeLink"
         style={{ textDecoration: 'none' }}
       >
         Accueil
@@ -17,7 +16,7 @@ function Nav() {
       <NavLink
         to="/about"
         className="nav__title"
-        activeClassName="activeLink"
+        activeclassname="activeLink"
         style={{ textDecoration: 'none' }}
       >
         A propos
@@ -25,7 +24,7 @@ function Nav() {
       <NavLink
         to="/projects"
         className="nav__title"
-        activeClassName="activeLink"
+        activeclassname="activeLink"
         style={{ textDecoration: 'none' }}
       >
         Projets
@@ -33,7 +32,7 @@ function Nav() {
       <NavLink
         to="/contact"
         className="nav__title"
-        activeClassName="activeLink"
+        activeclassname="activeLink"
         style={{ textDecoration: 'none' }}
       >
         Contact

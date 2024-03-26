@@ -1,9 +1,14 @@
 @import '../../style/_VarMix.scss';
 
+.contact-border {
+  height: calc(100vh - 88px);
+  background-color: $primary-color;
+  padding-left: 7%;
 
+}
 .contact {
-    padding-left: 7%;
-    background-color: $primary-color;
+    border-left: 2px solid white;
+    height: calc(100vh - 88px);
     &__title {
         color: white;
         font-family: 'titles' sans-serif;
@@ -12,11 +17,11 @@
     }
     &__container {
         background-color: $primary-color;
-        height: calc(100vh - 88px);
         display: flex;
         justify-content: center;
         align-items: center;
-        border-left: 2px solid white;
+        padding-top: 100px;
+
     }
     &__form {
         background: $card-color;
@@ -59,4 +64,28 @@ label {
   textarea {
     height: 150px;
     resize: none; // Empêche l'utilisateur de redimensionner le textarea
+  }
+
+  @media (max-width: 1095px) {
+    .contact-border {
+      padding: 0%;
+      height: calc(100vh - 132px);
+    }
+    .contact {
+      padding-left: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: calc(100vh - 132px);
+      border: 0px;
+
+      &__container {
+        border: 0px;
+        width: 80%;
+
+      }
+      &__title {
+        margin-top: 0px;
+      }
+    }
   }

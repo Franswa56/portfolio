@@ -2,6 +2,7 @@ import "./_Project.scss";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import React, { useState, useEffect } from "react";
 
+
 function Project({ name, description, image, url }) {
   // Écouter les changements d'état de connexion
   const [user, setUser] = useState(null);

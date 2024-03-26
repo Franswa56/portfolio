@@ -1,14 +1,14 @@
 @import '../../style/_VarMix.scss';
 .nav {
     display: flex;
-    justify-content: center;
+    gap: 25px;
     width: 60%;
     padding-top: 10px;
     position: relative;
     z-index: 100;
     &__title {
         color: white;
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 200;
         text-decoration: none;
         margin-bottom: 0px;
