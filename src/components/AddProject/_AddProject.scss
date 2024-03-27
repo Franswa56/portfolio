@@ -11,6 +11,10 @@
     transform: translateX(50vh) translateY(-40px);
     z-index: 2;
     width: 25%;
+    &__button-close {
+        @include button;
+        margin-left: 80%;
+    }
     &__duo {
         display: flex;
         flex-direction: column;

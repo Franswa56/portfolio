@@ -4,7 +4,7 @@ import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "fire
 import { db } from "../../index";
 import "./_AddProject.scss";
 
-function AddProject() {
+function AddProject( {closeModal}) {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [file, setFile] = useState(null);
@@ -53,6 +53,7 @@ function AddProject() {
 
   return (
     <form onSubmit={handleSubmit} className="modal">
+      <button onClick={closeModal} className="modal__button-close">Fermer</button>
       <div className="modal__duo">
         <label className="modal__text">Nom du projet:</label>
         <input type="text" value={name} className="modal__input" onChange={(e) => setName(e.target.value)} required />

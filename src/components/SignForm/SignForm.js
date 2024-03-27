@@ -59,7 +59,7 @@ function SignForm() {
         {loading ? 'loading':
       user ? (
         <div className="signin-message">
-          <p>Bonjour François, veux-tu <Link to="/projets" className='link'>ajouter des projets ?</Link></p>
+          <p>Bonjour François, veux-tu <Link to="/projects" className='link'>ajouter des projets ?</Link></p>
           <button className='logout' onClick={handleLogout}>Déconnexion</button>
         </div>
       ) : (

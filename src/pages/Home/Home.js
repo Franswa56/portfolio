@@ -12,7 +12,7 @@ function Home() {
         <img src={picto1} className="home__picto1"></img>
         <p className="home__work">Vous avez un projet en tête et cherchez du soutien ?<br></br> <br></br>Confiez-moi vos idées accompagnées d'une documentation détaillée et je me chargerai de développer pour vous une technologie robuste et évolutive.</p>
         
-        <div>
+        <div className="home__button-cont">
       <Link to="/contact" className="home__button">
         <p className="home__button-text">Me contacter</p>
         <i className="fa-solid fa-arrow-right"></i>

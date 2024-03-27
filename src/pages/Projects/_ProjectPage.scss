@@ -2,7 +2,7 @@
 
 .project-page {
     border-left: 2px solid white;
-    min-height: calc(100vh - 88px);
+    min-height: calc(100vh - 95px);
     &__container {
         padding-left: 3%;
         display: flex;
@@ -16,6 +16,17 @@
     }
     &__projects {
         display: flex;
+    }
+    &__header {
+        display: flex;
+        gap: 60px;
+        align-items: center
+    }
+    &__button {
+        @include button;
+        height: 50px;
+        width: 15%;
+        
     }
 }
 
