@@ -55,8 +55,8 @@ function ProjectPage() {
           </div>
           <div className="project-page__projects">
             {user && openModal && <AddProject closeModal={() => setOpenModal(false)} />}
-            {projects.map((project) => (
-              <Project key={project.id} name={project.name} description={project.description} image={project.imageUrl} url={project.projectUrl} />
+            {projects.map((project, index) => (
+              <Project key={project.id} name={project.name} description={project.description} image={project.imageUrl} url={project.projectUrl} tags={project.tags} isImageLeft={index % 2 === 0} />
             ))}
           </div>
         </div>

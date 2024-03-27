@@ -3,6 +3,7 @@
 .project-page {
     border-left: 2px solid white;
     min-height: calc(100vh - 95px);
+    padding-top: 40px;
     &__container {
         padding-left: 3%;
         display: flex;
@@ -13,9 +14,12 @@
         margin-top: 0px;
         color: white;
         margin-bottom: 40px;
+        font-size: 62px;
     }
     &__projects {
         display: flex;
+        flex-direction: column;
+        gap: 35px;
     }
     &__header {
         display: flex;

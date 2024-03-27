@@ -1,23 +1,46 @@
 @import '../../style/_VarMix.scss';
 
 .project {
-    width: 20%;
-    max-width: 270px; 
+    width: 90%; 
     @include card;
     background: $card-color;
     margin-left: 40px;
+    padding: 0px;
+    max-height: 500px;
     &__container {
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+    &--image-left {
+        display: flex;  
+          .project__content {
+            order: 1; // Le contenu texte vient ensuite
+          }
+        }
+    &--image-right {
+        display: flex;
+        .project__img {
+            order: 1; // L'image vient en premier
+          }
+        
+          .project__content {
+            order: 2; // Le contenu texte vient ensuite
+          }
+        }
+    &__text {
         display: flex;
         flex-direction: column;
-        height: 100%;
-        justify-content: space-evenly;
+        padding: 20px;
         align-items: center;
+        justify-content: space-between;
+        max-height: 400px;
     }
     &__name{
         margin-top: 10px;
         margin-bottom: 0px;
         color: white;
-        font-size: 24px;
+        font-size: 38px;
         font-family: 'titles', sans-serif;
         text-decoration: underline;
     }
@@ -25,18 +48,36 @@
         color: white;
         margin-top: 5px;
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 22px;
+        font-family: 'roboto';
 
     }
     &__img {
-        max-width: 80%;
+        max-width: 50%;
         border: solid 1px black;
         border-radius: 10px;
-
+        max-height: 400px;
     }
     &__url {
         color: white;
         margin-bottom: 5px;
-
+        margin-top: 10px;
+        font-size: 28px;
+        font-weight: 600;
+        @include button;
+        text-decoration: none;
+        padding: 12px;
+    }
+    &__tags {
+        width: 100%;
+        display: flex;
+        gap: 3%;
+        //justify-content: flex-end;
+    }
+    &__tag {
+        margin: 0px;
+        background: rgba(249, 75, 1, 0.5);
+        padding: 5px;
+        border-radius: 5px;
     }
 }
