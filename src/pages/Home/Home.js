@@ -1,7 +1,7 @@
 import "./_Home.scss";
 import picto from '../../style/assets/picto.png'
 import {Link} from 'react-router-dom'
-import picto1 from '../../style/assets/picto1.png'
+import picto1 from '../../style/assets/picto1.webp'
 
 function Home() {
   return (
@@ -21,7 +21,7 @@ function Home() {
         
       </div>
       <div className="home__picto">
-        <img src={picto} className="home__picto-img"></img>
+        <img src={picto} className="home__picto-img" alt="illustration"></img>
       </div>
     </div>
   );

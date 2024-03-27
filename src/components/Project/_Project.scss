@@ -2,8 +2,6 @@
 
 .project {
     width: 90%; 
-    @include card;
-    background: $card-color;
     margin-left: 40px;
     padding: 0px;
     max-height: 500px;
@@ -13,13 +11,19 @@
         display: flex;
     }
     &--image-left {
-        display: flex;  
+        display: flex; 
+        animation: slideInFromRight 1s ease-out forwards; 
+        @include card;
+        padding: 0px;
           .project__content {
             order: 1; // Le contenu texte vient ensuite
           }
         }
     &--image-right {
         display: flex;
+        animation: slideInFromLeft 1s ease-out forwards; 
+        @include card;
+        padding: 0px;
         .project__img {
             order: 1; // L'image vient en premier
           }
@@ -49,8 +53,8 @@
         margin-top: 5px;
         margin-bottom: 10px;
         font-size: 22px;
-        font-family: 'Open Sans';
-        font-weight: 600;
+        font-family: 'catamaran', sans-serif;
+        font-weight: 400;
 
     }
     &__img {
@@ -80,5 +84,38 @@
         background: rgba(249, 75, 1, 0.5);
         padding: 5px;
         border-radius: 5px;
+    }
+}
+
+@media (max-width: 1095px) {
+    .project {
+        width: 80%;
+        max-height: 2000px;
+        margin-bottom: 25px;
+        &__container {
+            flex-direction: column;
+        }
+        &__img {
+            max-width: 100%;
+        }
+        &__name{
+            font-size: 32px;
+
+        }
+        &__desc {
+            font-size: 16px;
+        }
+        &__tags {
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+        &__tag {
+        }
+        &--image-right {
+            .project__text {
+                order: 2;
+            }
+        }
+
     }
 }

@@ -14,7 +14,7 @@
         gap: 10%;
         padding-top: 45px;
         padding-left: 3%;
-        border-left: 2px solid white;      
+        border-left: 2px solid white;     
     }
     &__card {
         @include card;
@@ -23,14 +23,12 @@
         opacity: 0;
         margin-bottom: 30px
     }
-    &__illu {
-
-    }
     &__img {
-        margin-top: 50px;
-        width: 20%;
+        margin-left: 7%;      
+        width: 25%;
+        min-width: 400px;
+        animation: grow 500ms ease-out forwards; 
     }
-
     &__title {
         color: white;
         font-size: 38px;
@@ -74,17 +72,68 @@
     }
 }
 .zero {
-    width: 50%;
+    width: 49%;
 }
 
 .one {
     animation-delay: 600ms;
-    width: 82%;
+    width: 83.7%;
 }
 .two {
     width: 60%;
     animation-delay: 800ms;
     background-image:  linear-gradient(to right bottom, #4a4a4a, #464646, #424242, #3e3e3e, #3a3a3a);;
+    height: 100%;
+}
+
+@media (max-width: 1095px) {
+    .about {
+        padding: 0px;
+        align-items: center;
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            width: 90%;
+            padding-left: 0px;
+        }
+        &__title {
+            color: white;
+            font-size: 26px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        &__img {  
+            width: 65%;
+            min-width: 50px;
+            margin-left: 0px;
+        }
+        &__desc {
+            font-size: 18px; // Un peu plus grand pour l'introduction
+            margin-top: 25px;
+        }
+        &__skills-title {
+            font-size: 26px;
+        }
+        &__skills-list {
+            color: white;
+            font-size: 18px;
+            margin: 0px;
+            margin-top: 15px;
+        }
+    }
+    .zero {
+        width: 90%;
+        order: 2;
+        margin-top: 25px;
+    }
+    
+    .one {
+        width: 90%;
+    }
+    .two {
+        width: 90%;
+    }
 }
 
 // Les animations keyframes peuvent rester identiques à celles utilisées pour le Home

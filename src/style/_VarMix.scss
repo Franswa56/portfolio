@@ -54,3 +54,30 @@ $card-color: linear-gradient(to right bottom, #373737, #333333, #2f2f2f, #2b2b2b
     opacity: 1; /* L'image reste opaque après l'animation */
   }
 }
+
+@keyframes growadd {
+  from {
+    transform: translateX(50vh) translateY(-40px) scale(0); /* Démarre réduite */
+  }
+  to {
+    transform: translateX(50vh) translateY(-40px) scale(1); /* Grandit jusqu'à la taille normale */
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Commence en dehors de l'écran, à droite */
+  }
+  to {
+    transform: translateX(0); /* Se termine à sa position originale */
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* Commence en dehors de l'écran, à droite */
+  }
+  to {
+    transform: translateX(0); /* Se termine à sa position originale */
+  }
+}

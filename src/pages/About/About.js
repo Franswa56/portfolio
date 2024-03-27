@@ -1,5 +1,5 @@
 import "./_About.scss";
-import devpic from "../../style/assets/aboutImg.png";
+import devpic from "../../style/assets/aboutImg.webp";
 import HTML from "../../style/assets/HTML.png";
 import CSS from "../../style/assets/CSS.png";
 import SCSS from "../../style/assets/SCSS.png";
@@ -22,7 +22,7 @@ function About() {
           <h2 className="about__title">Développeur Web | 28 ans | Innovateur et Créateur</h2>
           <p className="about__desc">Je suis un architecte du web moderne, spécialisé en React, avec un talent pour transformer les idées complexes en applications web fluides et engageantes. Mon approche est guidée par une quête incessante d'innovation et une passion pour l'excellence technique.</p>
         </div>
-        <img className="about__img" src={devpic}></img>
+        <img className="about__img" src={devpic} alt="photo de moi"></img>
         {/* Ici, vous pouvez ajouter des images ou d'autres éléments si nécessaire */}
       </div>
       <div className="about__container">
