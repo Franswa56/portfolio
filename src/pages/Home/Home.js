@@ -9,7 +9,7 @@ function Home() {
       <div className="home__container">
         <p className="home__job">Développeur Web</p>
         <h1 className="home__desc">La créativité codée pour des expériences web sur mesure.</h1>
-        <img src={picto1} className="home__picto1"></img>
+        <img src={picto1} className="home__picto1" alt="illustration"></img>
         <p className="home__work">Vous avez un projet en tête et cherchez du soutien ?<br></br> <br></br>Confiez-moi vos idées accompagnées d'une documentation détaillée et je me chargerai de développer pour vous une technologie robuste et évolutive.</p>
         
         <div className="home__button-cont">
